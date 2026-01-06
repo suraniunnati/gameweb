@@ -524,9 +524,9 @@ h3 {
   border: .007rem solid #d30303;
 }
 .second-section .tab_menu span {
+  display: none;
   flex: 1;
   text-align: center;
-  overflow: hidden;
   white-space: nowrap;
   background-color: #eaeaea;
   border-right: .007rem solid #d30303;

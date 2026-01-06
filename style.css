@@ -88,16 +88,13 @@ h3{
   @apply w-full m-0 border border-[#525252e2] rounded-[0px_10px] bg-[#e9effc] text-black text-inherit p-10 pl-40; 
 }
 .second-section .tab_menu{
-
-    text-align: center;
+  @apply text-center;
     color: #000;
     font-size: .28rem;
     border: .007rem solid #d30303;
 }
 .second-section  .tab_menu span {
-    flex: 1;
-    text-align: center;
-    overflow: hidden;
+  @apply hidden flex-1 text-center;
     white-space: nowrap;
     background-color: #eaeaea;
     border-right: .007rem solid #d30303;
