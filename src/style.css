@@ -356,10 +356,15 @@ h3 {
   background-color: #4600e8 !important;
   padding: calc(var(--spacing) * 10);
   text-align: center;
-  color: #fff !important;
+  color: #fff;
   text-transform: uppercase;
   --tw-shadow: 0 0 #0000;
   box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  &:hover {
+    @media (hover: hover) {
+      color: #4600e8 !important;
+    }
+  }
   @media (width >= 48rem) {
     padding-inline: calc(var(--spacing) * 16);
   }
@@ -385,15 +390,20 @@ h3 {
   height: 100%;
   width: calc(var(--spacing) * 0);
   background-color: #fff !important;
+  color: #4600e8 !important;
   transition-delay: 150ms;
-  --tw-duration: 300ms;
-  transition-duration: 300ms;
+  --tw-duration: 500ms;
+  transition-duration: 500ms;
   --tw-ease: linear;
   transition-timing-function: linear;
 }
 .btn-blue:hover::before {
   left: calc(var(--spacing) * 0);
   width: 100%;
+  color: #4600e8 !important;
+}
+.btn-blue:hover a i {
+  color: #4600e8 !important;
 }
 .content {
   position: relative;
