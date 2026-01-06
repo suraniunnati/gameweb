@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+@theme {
+    /* spacing */
+    --spacing: 1px;
+}
+
+h3{
+  @apply text-[22px]
+}
+.title-bold{
+    @apply font-bold
+}
+.btn {
+    @apply inline-flex  cursor-pointer items-center justify-center rounded-full border-0  font-bold leading-20  transition-all duration-300 ease-in-out;
+  }
+ .btn-blue{
+    @apply !text-[#fff] !bg-[#4600e8] inline-flex items-center p-10 md:px-16 md:py-11 justify-center text-center uppercase shadow-none rounded-[4px]  relative z-1 overflow-hidden;
+  }
+   .btn-blue a{
+    @apply flex items-center gap-4 text-[10px] md:text-[20px]
+   }
+  .btn-blue::before {
+    content: "";
+    @apply absolute top-0 right-0 w-0 h-full !bg-[#fff] -z-1 duration-300 delay-150 ease-linear;
+  }
+  
+  .btn-blue:hover::before {
+    @apply w-full left-0;
+  }
+  .content {
+  @apply relative flex flex-col w-full;
+}
+
+.content p {
+  @apply leading-20 font-medium not-italic relative block m-0 p-0;
+  -webkit-font-smoothing: antialiased;
+}
+ .content.gray p{
+  @apply text-[#9a9b9b]
+ }
+
+.header-top {
+    @apply bg-[#378524] text-white;
+}
+.headerNav{
+  @apply w-full bg-white absolute top-84 left-0 p-20;
+}
+.headerNav ul li{
+  @apply w-full bg-[#378524] text-center rounded-[10px] py-10
+}
+.headerNav ul li a{
+  @apply  text-white font-bold  w-full text-[30px];
+}
+.header-bottom{
+    @apply bg-[#ff0000] text-white;
+}
+.header-bottom ul {
+    @apply grid grid-cols-5 text-center h-full w-full;
+}
+.header-bottom ul li{
+  @apply py-10
+}
+.header-bottom ul li a{
+    @apply  font-bold text-[15px] md:text-[25px] ;
+}
+.header-bottom ul li:nth-child(1){
+  @apply bg-[#5246b7]
+}
+
+.first-section .inner-sec{
+    @apply flex flex-col justify-center items-center text-center p-20 rounded-2xl bg-white;
+}
+
+.first-section .inner-sec .img img{
+    @apply w-124 h-124 object-cover rounded-[24px];
+}
+.first-section .inner-sec .content p{
+  @apply font-bold text-[18px];
+}
+.second-section .search_icon{
+  @apply absolute top-2 left-10 z-1;
+}
+.second-section .search_box{
+  @apply w-full m-0 border border-[#525252e2] rounded-[0px_10px] bg-[#e9effc] text-black text-inherit p-10 pl-40; 
+}
+.second-section .tab_menu{
+
+    text-align: center;
+    color: #000;
+    font-size: .28rem;
+    border: .007rem solid #d30303;
+}
+.second-section  .tab_menu span {
+    flex: 1;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #eaeaea;
+    border-right: .007rem solid #d30303;
+    border-left: .007rem solid #d30303;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 28px;
+    padding-block: 10px;
+}
+.second-section .tab_menu span.current {
+    color: #fff;
+    background-color: #003a92;
+    font-weight: 600;
+    opacity: 2.5;
+    -webkit-transform: scale(.93);
+}
+
+.tab{
+	display: none;
+}
+.tab-active{
+	display: block;
+}
+
+.second-section .tab .items .num{
+  @apply block font-bold md:text-[32px] text-[#cecece] text-center md:w-[20px];
+ 
+}
+.second-section .tab .items img{
+  @apply rounded-[18px] mx-20 w-[50px] h-[50px] md:w-[118px]  md:h-[118px];
+}
+.second-section .tab .items span:nth-child(2){
+   @apply text-[#ffa709] md:text-[20px];
+}
+.second-section .tab .items span:nth-child(3){
+   @apply text-[#ababab] md:text-[20px] font-bold;
+}
+
+marquee {
+  @apply py-15 relative w-auto bg-[#fff200] text-black font-sans font-semibold border border-dashed border-[#d60000];
+}
+
+.footer{
+  @apply bg-[#003a92] flex flex-col justify-center items-center text-center p-20;
+}
+.footer .links a {
+  @apply flex items-center p-5 px-20  text-white border border-[#c1c1c1] rounded-[8px] font-bold text-[20px];
+}
+.footer .footer-right a{
+   @apply p-[10px_20px_10px_20px] rounded-[10px] shadow-[0_5px_0]
+}
+.footer .footer-right a:hover{
+  @apply shadow-none duration-300 scale-95
+}
+.footer .footer-right a:nth-child(1){
+  @apply  bg-[#3b5998]
+}
+.footer .footer-right a:nth-child(2){
+  @apply bg-[#ff0000] 
+}
+.footer .footer-right a:nth-child(3){
+  @apply  bg-[#0da000] 
+}
+.footer .footer-right a:nth-child(4){
+  @apply  bg-[#e60023] 
+}
+.footer .footer-right a:nth-child(5){
+  @apply  bg-[#4ea0df] 
+}
